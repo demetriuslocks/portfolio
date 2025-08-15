@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio Imediato • 2025/08/15</title>
+  <meta name="description" content="Portfólio Demétrius Locks." />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Portfólio Imediato — Demétrius Locks" />
+  <meta property="og:description" content="Projetos Locks — utilities e demos." />
+  <meta property="og:url" content="https://demetriuslocks.github.io/portfolio/" />
+  <meta property="og:image" content="logo_prov_demetrius.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="logo_prov_demetrius.png" type="image/png" />
+  <link rel="alternate icon" href="logo-black-512.png" type="image/png" />
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48" />
+  <link rel="apple-touch-icon" href="logo-black-180.png" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#0b0c0f" />
+  <style>
+      :root{
+      --bg:#0b0c0f; --panel:#141720; --soft:#1b2030; --text:#eef1f5; --muted:#a9b2c3; --accent:#6ee7ff; --ring:#2a3348;
+    }
+    @media (prefers-color-scheme: light) {
+      :root{ --bg:#f5f7fb; --panel:#ffffff; --soft:#eef2f9; --text:#0b1220; --muted:#5b6475; --accent:#006dff; --ring:#cfd8ea; }
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:radial-gradient(1200px 800px at 10% -10%, rgba(110,231,255,.08), transparent 60%),
+           radial-gradient(800px 600px at 100% 0%, rgba(0,109,255,.08), transparent 60%), var(--bg); color:var(--text);
+         font: 500 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"}
+    a{color:inherit}
+    header{position:sticky;top:0;backdrop-filter:saturate(1.2) blur(6px);background:color-mix(in oklab,var(--bg) 80%, transparent); z-index:5}
+    .wrap{max-width:1100px;margin-inline:auto;padding:20px}
+    .hero{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .title{font-size:clamp(22px,4vw,30px);font-weight:800;letter-spacing:.2px;display:flex;align-items:center;gap:10px}
+    .subtitle{color:var(--muted)}
+
+    .toolbar{display:grid;grid-template-columns:1fr auto;gap:12px;margin-top:14px}
+    #q{width:100%;padding:12px 14px;border-radius:14px;border:1px solid var(--ring);background:var(--panel);color:var(--text);outline:none}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{border:1px solid var(--ring);background:var(--panel);padding:8px 12px;border-radius:999px;cursor:pointer; user-select:none}
+    .chip[data-active="true"]{outline:2px solid color-mix(in oklab, var(--accent) 60%, transparent);}
+
+    .grid{display:grid;grid-template-columns:repeat( auto-fill, minmax(260px,1fr) );gap:16px}
+    .card{background:linear-gradient(180deg,var(--panel),color-mix(in oklab,var(--panel) 70%,#000 30%));border:1px solid var(--ring);border-radius:18px;overflow:hidden; display:flex;flex-direction:column}
+    .media{aspect-ratio:16/9;background:var(--soft);position:relative}
+    .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+    .media .badge{position:absolute;top:8px;left:8px;background:color-mix(in oklab,var(--accent) 30%, #000 70%);color:#fff;font-size:12px;padding:4px 8px;border-radius:999px}
+    .body{padding:14px 14px 10px 14px;display:flex;gap:10px;flex-direction:column}
+    .name{font-weight:750}
+    .desc{color:var(--muted);font-size:14px}
+    .meta{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{font-size:12px;padding:4px 8px;border:1px solid var(--ring);border-radius:999px;color:var(--muted)}
+    .footer{margin-top:auto;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;border-top:1px dashed var(--ring)}
+    .btn{padding:8px 12px;border-radius:12px;border:1px solid var(--ring);background:var(--soft);text-decoration:none}
+
+    .empty{opacity:.7;text-align:center;padding:40px}
+    .sr-only{position:absolute;width:1px;height:1px;margin:-1px;border:0;padding:0;clip:rect(0 0 0 0);overflow:hidden}
+    .logo{width:28px;height:28px;color:var(--text);}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="hero">
+        <div>
+          <div class="title"><img class="logo" src="logo_prov_demetrius.png" alt="" /> <span>Portfólio Imediato • <span id="count">0</span> projetos</div>
+          <div class="subtitle">Projetos Demetrius Locks</div>
+        </div>
+        <div class="contact-buttons" style="display:flex; gap:8px">
+          <a class="btn" href="mailto:locksdemetrius@gmail.com" title="Enviar e‑mail">E‑mail</a>
+          <a class="btn" href="https://wa.me/5551999789033" target="_blank" rel="noopener" title="Chamar no WhatsApp">WhatsApp</a>
+          <a class="btn" href="https://instagram.com/demetriuslocks" target="_blank" rel="noopener" title="Instagram">Instagram</a>
+          <a class="btn" href="https://youtube.com/@demetriuslocks" target="_blank" rel="noopener" title="YouTube">YouTube</a>
+        </div>
+      </div>
+      <div class="toolbar" role="search">
+        <label class="sr-only" for="q">Buscar</label>
+        <input id="q" placeholder="Buscar por título, descrição ou tag…" autocomplete="off" />
+        <div class="chips" id="chips"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="grid" id="grid" aria-live="polite"></section>
+    <div id="empty" class="empty" hidden>Nenhum projeto encontrado. Ajuste a busca ou tags.</div>
+
+    <hr style="margin:40px 0;border:0;border-top:1px dashed var(--ring)" />
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <ol>
+        <li>email • <a href="mailto:locksdemetrius@gmail.com">locksdemetrius@gmail.com</a></li>
+        <li>whats • <a href="https://wa.me/5551999789033" target="_blank" rel="noopener">+55 (51) 99978‑9033</a></li>
+        <li>instagram • <a href="https://instagram.com/demetriuslocks" target="_blank" rel="noopener">@demetriuslocks</a></li>
+        <li>youtube • <a href="https://youtube.com/@demetriuslocks" target="_blank" rel="noopener">@demetriuslocks</a></li>
+      </ol>      
+    </section>
+  </main>
+
+  <!-- Dados: edite aqui -->
+  <script id="data" type="application/json">{
+  "projects": [{ "name": "Primus Auditions — Invitation & Tribute Video", "date": "2025-01-01", "desc": "Convidado por Les Claypool/Larry para audições do Primus em LA; apesar de não poder comparecer, a banda publicou um vídeo especial falando sobre Demétrius.", "tags": ["drums","audition","primus","recognition"], "links": {"repo": "", "demo": ""}, "thumb": "" }, { "name": "Vitalism — EP ‘ANIMA’ (Top 100 iTunes)", "date": "2024-01-01", "desc": "Lançamento do EP ‘ANIMA’; entrou no Top 100 do iTunes (USA, Canadá e Alemanha) em um dia.", "tags": ["vitalism","djent","release","itunes"], "links": {"repo": "", "demo": ""}, "thumb": "" }, { "name": "Montreux Jazz Festival — Live c/ Veronese", "date": "2023-01-01", "desc": "Apresentação ao vivo no Montreux Jazz Festival (RJ, 2023) com o guitarrista Guilherme Veronese.", "tags": ["live","festival","montreux","performance"], "links": {"repo": "", "demo": ""}, "thumb": "" }, { "name": "Louie Lopez — Recording (L.A.)", "date": "2023-01-01", "desc": "Gravações em Los Angeles recomendadas por Kiko Loureiro para o guitarrista Louie Lopez.", "tags": ["studio","recording","losangeles","kikoloureiro"], "links": {"repo": "", "demo": ""}, "thumb": "" }, { "name": "Rock in Rio — Convite de Tré Cool (Green Day)", "date": "2022-01-01", "desc": "Convite do icônico Tré Cool para o Rock in Rio (2022).", "tags": ["invite","rockinrio","greenday"], "links": {"repo": "", "demo": ""}, "thumb": "" }, { "name": "Breizh Drum Camp — Headliner (França)", "date": "2017-01-01", "desc": "Headliner do Drum Camp na França ao lado do lendário Dom Famularo.", "tags": ["drumcamp","workshop","france"], "links": {"repo": "", "demo": ""}, "thumb": "" }, { "name": "Musicians Institute — Workshop (Los Angeles)", "date": "2015-01-01", "desc": "Workshop no Musicians Institute (MI), Los Angeles.", "tags": ["workshop","education","losangeles"], "links": {"repo": "", "demo": ""}, "thumb": "" }, { "name": "DVD — Double Bass Applied to Brazilian Rhythms: Excerpts of Maracatu", "date": "2016-01-01", "desc": "DVD com introdução à história do maracatu, instrumentos e demonstrações de bumbo duplo aplicado a ritmos brasileiros, com grooves, exercícios, músicas e solos.", "tags": ["dvd","education","maracatu","doublebass"], "links": {"repo": "", "demo": ""}, "thumb": "" }, { "name": "Online Series — Maracatu Under the Microscope", "date": "2017-01-01", "desc": "Série online aprofundando a aplicação do maracatu no kit de bateria.", "tags": ["online","series","maracatu","education"], "links": {"repo": "", "demo": ""}, "thumb": "" }, { "name": "Online Series — Drumming in a Graveyard", "date": "2015-01-01", "desc": "Série online com explorações rítmicas e de linguagem no kit.", "tags": ["online","series","drums"], "links": {"repo": "", "demo": ""}, "thumb": "" }, { "name": "Maracatu for Drumset", "date": "2010-01-01", "desc": "Projeto/lançamento focado na transposição do maracatu para o kit de bateria.", "tags": ["maracatu","education","publication"], "links": {"repo": "", "demo": ""}, "thumb": "" }]
+}</script>
+
+  <script>
+      const state={all:[],tags:new Set(),q:"",activeTags:new Set()}
+      const $=(q,el=document)=>el.querySelector(q); const $$=(q,el=document)=>[...el.querySelectorAll(q)]
+      function load(){
+        const json = JSON.parse(document.getElementById('data').textContent)
+        state.all = json.projects.map((p,i)=>({...p, id:i}))
+          .sort((a,b)=> (b.date||'').localeCompare(a.date||''))
+        state.tags = new Set(state.all.flatMap(p=>p.tags||[]))
+        renderChips(); filter();
+      }
+      function renderChips(){
+        const box = document.getElementById('chips'); box.innerHTML=''
+        ;['tudo',...Array.from(state.tags).sort()].forEach(tag=>{
+          const b=document.createElement('button');
+          b.className='chip'; b.textContent=tag; b.dataset.tag=tag
+          b.dataset.active = tag==='tudo'
+          b.onclick=()=>{
+            if(tag==='tudo'){ state.activeTags.clear() }
+            else{
+              if(state.activeTags.has(tag)) state.activeTags.delete(tag); else state.activeTags.add(tag)
+            }
+            $$('.chip',box).forEach(el=>{
+              const t=el.dataset.tag
+              el.dataset.active = (tag==='tudo') ? (t==='tudo') : (t!=='tudo' && state.activeTags.has(t))
+            })
+            filter()
+          }
+          box.appendChild(b)
+        })
+      }
+      function filter(){
+        const q = ($('#q').value||'').toLowerCase();
+        const byText = p=> (p.name+" "+(p.desc||'')+" "+(p.tags||[]).join(' ')).toLowerCase().includes(q)
+        const byTags = p=> state.activeTags.size===0 || (p.tags||[]).some(t=>state.activeTags.has(t))
+        const list = state.all.filter(p=>byText(p) && byTags(p))
+        $('#count').textContent = list.length
+        renderGrid(list)
+      }
+      function renderGrid(list){
+        const grid=$('#grid'); grid.innerHTML=''
+        if(!list.length){ $('#empty').hidden=false; return } else $('#empty').hidden=true
+        list.forEach(p=>{
+          const card=document.createElement('article'); card.className='card'
+          const media=document.createElement('div'); media.className='media'
+          if(p.thumb){ const img=new Image(); img.loading='lazy'; img.src=p.thumb; media.appendChild(img) }
+          const b=document.createElement('span'); b.className='badge'; b.textContent=new Date(p.date).toLocaleDateString('pt-BR'); media.appendChild(b)
+          const body=document.createElement('div'); body.className='body'
+          const h=document.createElement('div'); h.className='name'; h.textContent=p.name; body.appendChild(h)
+          const d=document.createElement('div'); d.className='desc'; d.textContent=p.desc||''; body.appendChild(d)
+          const meta=document.createElement('div'); meta.className='meta';
+          (p.tags||[]).forEach(t=>{ const s=document.createElement('span'); s.className='tag'; s.textContent=t; meta.appendChild(s) });
+          body.appendChild(meta)
+          const foot=document.createElement('div'); foot.className='footer'
+          const left=document.createElement('div'); left.innerHTML='&nbsp;'
+          const right=document.createElement('div');
+          if(p.links?.demo){ const a=document.createElement('a'); a.className='btn'; a.href=p.links.demo; a.target='_blank'; a.rel='noopener'; a.textContent='Demo'; right.appendChild(a) }
+          if(p.links?.repo){ const a=document.createElement('a'); a.className='btn'; a.href=p.links.repo; a.target='_blank'; a.rel='noopener'; a.textContent='Repo'; right.appendChild(a) }
+          foot.append(left,right)
+          card.append(media,body,foot)
+          grid.appendChild(card)
+        })
+      }
+      document.addEventListener('input', e=>{ if(e.target.id==='q') filter() })
+      load()
+  </script>
+</body>
+</html>
